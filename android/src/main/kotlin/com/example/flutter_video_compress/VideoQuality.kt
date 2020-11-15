@@ -11,7 +11,8 @@ enum class VideoQuality(val value : Int) {
     }
 
     fun getScaleString(): String = when (this) {
-        DefaultQuality, LowQuality -> "192"
+        DefaultQuality -> "960"
+		LowQuality -> "192"
         MediumQuality -> "480"
         HighestQuality -> "1280"
     }
